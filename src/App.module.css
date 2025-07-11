@@ -1,0 +1,268 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+/* fonts */
+.palanquin-thin {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.palanquin-extralight {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.palanquin-light {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.palanquin-regular {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.palanquin-medium {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.palanquin-semibold {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.palanquin-bold {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* General styles */
+button{
+  outline: none;
+}
+button:focus{
+  outline: none; /* Ensures no outline on focus */
+  box-shadow: none; /* Remove any additional box-shadow */
+}
+
+
+.headerAndFooterName{
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+.headerIcons svg path{
+  fill: #fff;
+  transition: fill 0.4s ease-in-out;
+}
+.headerIcons:hover svg path {
+  fill: #4CE19E;
+}
+.introSection{
+  padding-bottom: 4.8rem
+}
+.introPatternRings{
+  margin-left: -4.5rem; 
+}
+.introText{
+  margin-top: -5.5rem;
+}
+.introLeftSide{
+  width: 75%;
+}
+.introParagraph{
+  font-family: monospace;
+}
+.contactMeButtonDiv button{
+  font-family: cursive;
+  background-color: transparent;
+  /* border-b-4 border-green-400 pb-1 */
+  border-bottom: 4px;
+  border-color: #4CE19E;
+  padding-bottom: 1px;
+  transition: color 0.6s ease-in-out;
+}
+.contactMeButtonDiv button:hover{
+  color: #4CE19E;
+}
+.photo{
+  height: 100%;
+  width: 100%;
+}
+.photo img{
+  height: 100%;
+  width: 100%;
+  border-radius: 104px;
+}
+.fightSide{
+  margin-left: -15rem;
+  margin-top: -4rem;
+  width: 33rem;
+  height: 36rem;
+}
+.singleCircle{
+  z-index: 10;
+  margin-top: -11rem;
+  margin-left: -3rem;
+}
+.leftArrow svg path{
+  transition: fill 0.9s ease-in-out;
+}
+.rightArrow svg path{
+  transition: fill 0.9s ease-in-out;
+}
+.leftArrow:hover svg path{
+  fill: #4CE19E;
+}
+.rightArrow:hover svg path{
+  fill: #4CE19E;
+}
+.leftArrow:hover svg .arrowLeft {
+  transform: translateX(-40px);
+}
+.leftArrow:hover svg .arrowRight {
+  transform: translateX(40px);
+}
+.rightArrow:hover svg .arrowLeft {
+  transform: translateX(-40px);
+}
+.rightArrow:hover svg .arrowRight {
+  transform: translateX(40px);
+}
+.arrowLeft {
+  transition: transform 0.4s ease-in-out;
+}
+.arrowRight {
+  transition: transform 0.4s ease-in-out;
+}
+.skill{
+  text-align: left;
+}
+.skillName{
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: emoji;
+}
+.projects h1{
+  font-weight: bold;
+  font-size: 5.5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.underlineButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+.underlineButton:hover{
+  color: #4CE19E;
+}
+.underlineButton::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #4CE19E;
+  transform: scaleX(0.8);
+  transition: transform 0.3s ease;
+}
+.underlineButton:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* ─────────────────────────────────────────────
+   NEW section – styles applied when disabled
+   ───────────────────────────────────────────── */
+.underlineButton:disabled,
+.underlineButton[disabled] {
+  color: #8a8a8a;           /* grey text */
+  cursor: not-allowed;      /* “forbidden” cursor */
+}
+
+.underlineButton:disabled:hover,
+.underlineButton[disabled]:hover {
+  color: #8a8a8a;           /* stop green hover colour */
+}
+
+.underlineButton:disabled::after,
+.underlineButton[disabled]::after {
+  background-color: #8a8a8a;   /* grey underline */
+}
+
+.underlineButton:disabled:hover::after,
+.underlineButton[disabled]:hover::after {
+  transform: scaleX(0.8);      /* keep the original width on hover */
+}
+
+
+
+
+.projectTitle{
+  font-weight: bold;
+  font-size: 2.3rem;
+  font-family: serif;
+}
+.projectSkills{
+  font-family: 'Courier New', Courier, monospace;
+}
+.footerContact{
+  font-weight: bold;
+  font-size: 5.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footerText{
+  color: #D9D9D9;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input:focus + label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  top: -1.5rem;
+  font-size: 0.75rem;
+  color: #4CE19E;
+  
+}
+input + label,
+textarea + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+  margin-left: 1rem;
+}
+.formButtonContainer button{
+  font-family: 'Times New Roman', Times, serif;
+}
