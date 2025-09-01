@@ -23,7 +23,7 @@ const skillCategories = {
     { name: 'Docker', icon: '/icons/docker.svg' },
     { name: 'DBMS', icon: '/icons/database.svg' },
     { name: 'Sanctum', icon: 'no icon' },
-    { name: 'JWT', icon: '/icons/jwt.svg' },
+    { name: 'JWT', icon: '/icons/Jwt.svg' },
   ],
   'CMS & E-commerce': [
     { name: 'WordPress', icon: '/icons/wordpress.svg' },
