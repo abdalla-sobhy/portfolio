@@ -60,10 +60,6 @@ export default function Contact() {
     setIsSubmitting(true)
     
     try {
-      // Simulate form submission delay
-      await new Promise(resolve => setTimeout(resolve, 1500))
-      
-      // Create email content
       const subject = `New ${formData.service} inquiry from ${formData.firstName} ${formData.lastName}`
       const body = `
 Name: ${formData.firstName} ${formData.lastName}
@@ -75,14 +71,11 @@ Message:
 ${formData.message}
       `.trim()
       
-      // Open email client with pre-filled content
       const mailtoLink = `mailto:abdallahbs9393@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
       window.location.href = mailtoLink
       
-      // Show success message
       setSubmitStatus('success')
       
-      // Reset form after 3 seconds
       setTimeout(() => {
         setFormData({
           firstName: '',
@@ -111,7 +104,6 @@ ${formData.message}
       [name]: value,
     }))
     
-    // Clear error for this field when user starts typing
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,

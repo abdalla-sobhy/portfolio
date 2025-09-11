@@ -117,7 +117,7 @@ export default function Work() {
               </div>
             </div>
             
-                        {/* Right content - Project Image */}
+            {/* Right content - Project Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

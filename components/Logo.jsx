@@ -1,6 +1,5 @@
 export const Logo = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* Option 1: Stylized "A" with geometric design */}
     <path 
       d="M20 5L30 25H25L20 15L15 25H10L20 5Z" 
       fill="currentColor" 
@@ -23,7 +22,6 @@ export const Logo = () => (
   </svg>
 )
 
-// Alternative Option 2: Elegant monogram style
 export const LogoMonogram = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="1" y="1" width="38" height="38" stroke="#d4af37" strokeWidth="2" fill="none" />
@@ -42,7 +40,6 @@ export const LogoMonogram = () => (
   </svg>
 )
 
-// Alternative Option 3: Modern abstract logo
 export const LogoAbstract = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path 
@@ -60,7 +57,6 @@ export const LogoAbstract = () => (
   </svg>
 )
 
-// Alternative Option 4: Hexagon with initial
 export const LogoHexagon = () => (
   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path 
