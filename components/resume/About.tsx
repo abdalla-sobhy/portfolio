@@ -20,7 +20,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         className="text-gray-300 leading-relaxed mb-8"
       >
-        I&apos;m a passionate Full Stack Developer with a strong background in web development and a proven track record of delivering high-quality, scalable, and efficient web applications. My expertise lies in building robust and responsive user interfaces using React, Next.js, and TypeScript, while ensuring clean, maintainable, and well-structured codebases.
+        passionate Full Stack Developer with a strong background in web development and a proven track record of delivering high-quality, scalable, and efficient web applications. My expertise lies in building robust and responsive user interfaces using React, Next.js, and TypeScript, while ensuring clean, maintainable, and well-structured codebases.
         On the backend, I have hands-on experience with PHP (Laravel) and MySQL, enabling me to design and implement secure, efficient, and scalable server-side solutions. In addition, I work with WordPress, specializing in Elementor and WooCommerce, to deliver dynamic websites and custom e-commerce solutions tailored to business needs.
         I thrive on bridging frontend and backend technologies to create seamless digital experiences, always focusing on performance, maintainability, and scalability.
       </motion.p>
