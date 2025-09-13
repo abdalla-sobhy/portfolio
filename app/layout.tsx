@@ -20,9 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-slate-900 text-white`}>
         <Navbar />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <main className="pt-20">
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </main>
       </body>
     </html>
   )
