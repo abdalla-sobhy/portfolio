@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-    period: 'June 2025 - Present',
+    period: 'Jul 2025 - Dec 2025',
     title: 'Fullstack Developer',
     company: 'Digital Egyptian Pioneers',
     type: 'internship',
@@ -12,6 +12,18 @@ const experiences = [
     title: 'PHP React Fullstack Developer',
     company: 'Company Project - Scandiweb',
     type: 'freelance',
+  },
+  {
+    period: "Oct 2025 - Dec 2025",
+    title: "Frontend Developer",
+    company: "International Knowledge Academy - Egypt",
+    type: "freelance",
+  },
+  {
+    period: "Sep 2025 - Oct 2025",
+    title: "WordPress Developer",
+    company: "ZidClean - Cleaning Services Platform - Saudi Arabia",
+    type: "freelance",
   },
   {
     period: 'June 2024 - September 2024',
